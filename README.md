@@ -1,74 +1,108 @@
-# PQXNet - Quantum-Resilient Network Infrastructure Website
+# **PQXNet — Building the Quantum-Resilient Internet**
 
-A modern, professional corporate website for PQXNet, a next-generation network infrastructure solutions provider specializing in quantum-resilient connectivity.
+---
 
-## Features
+## **1. About Us**
 
-### Design
-- **Dark Theme**: Modern dark mode design with OLED-friendly colors
-- **Green Color Scheme**: Professional green accent colors (#00E599 primary, #66FFC2 highlights)
-- **Typography**: Poppins for headings, Inter for body text, JetBrains Mono for technical content
-- **Responsive Design**: Mobile-first approach with breakpoints at 768px and 1024px
+**PQXNet** is a next-generation network infrastructure solutions provider pioneering **quantum-resilient connectivity** for enterprises, data centers, and cloud-native environments.
 
-### Sections
-1. **Hero Section**: Animated background with quantum-themed graphics
-2. **About Us**: Company overview and mission
-3. **Mission & Vision**: Dual-card layout showcasing company goals
-4. **Technology**: Core technology pillars with icon-based cards
-5. **Solutions**: Enterprise-grade solution offerings
-6. **Ecosystem & Standards**: Industry alignment and partnerships
-7. **Why PQXNet**: Key differentiators and value propositions
-8. **Contact**: Call-to-action for partnerships and solutions
+Headquartered in **Dallas, Texas**, PQXNet was founded with a single mission — to **secure the world’s digital backbone** against emerging cyber threats and the coming disruption of quantum computing.
 
-### Interactive Features
-- **Smooth Scrolling**: Navigation links smoothly scroll to sections
-- **Active Navigation**: Current section highlighted in navigation
-- **Hover Effects**: Cards lift and glow on hover
-- **Typing Animation**: Hero title types out on page load
-- **Particle Effects**: Subtle floating particles in hero section
-- **Ripple Effects**: Button click animations
-- **Parallax Scrolling**: Background moves at different speeds
-- **Fade-in Animations**: Elements animate as they come into view
+Our experts in secure networking, cryptography, and distributed systems design intelligent infrastructure that fuses **traditional IP networks** with **quantum-resistant encryption protocols**. The result is a high-performance, trustworthy, and future-proof network fabric — ensuring **data confidentiality, integrity, and interoperability** across every digital ecosystem.
 
-### Technical Implementation
-- **Pure HTML/CSS/JS**: No external frameworks required
-- **CSS Grid & Flexbox**: Modern layout techniques
-- **CSS Custom Properties**: Consistent color system
-- **Intersection Observer**: Performance-optimized scroll animations
-- **Mobile Menu**: Collapsible navigation for mobile devices
+---
 
-## File Structure
-```
-/
-├── index.html          # Main HTML structure
-├── styles.css          # Complete CSS styling
-├── script.js           # Interactive functionality
-└── README.md           # This documentation
-```
+## **2. Mission & Vision**
 
-## Browser Support
-- Modern browsers (Chrome, Firefox, Safari, Edge)
-- Mobile browsers (iOS Safari, Chrome Mobile)
-- Progressive enhancement for older browsers
+### **Our Mission**
 
-## Performance Features
-- Optimized animations using CSS transforms
-- Intersection Observer for scroll-triggered animations
-- Reduced motion support for accessibility
-- Efficient particle system with limited elements
+To enable organizations worldwide to **build and operate quantum-safe networks**, ensuring that the data economy remains secure, reliable, and trusted — even in the era of quantum computing.
 
-## Accessibility
-- High contrast ratios (WCAG AA compliant)
-- Semantic HTML structure
-- Keyboard navigation support
-- Screen reader friendly
-- Reduced motion preferences respected
+### **Our Vision**
 
-## Customization
-The website uses a modular CSS system with:
-- 8px spacing grid
-- Consistent color tokens
-- Typography scale based on 1.25 ratio
-- Component-based card system
+A future where **trust is inherent in every connection** — where enterprises, governments, and critical infrastructure communicate through a **quantum-resilient digital fabric** that transcends today’s cryptographic boundaries.
 
-Colors can be easily customized by updating the CSS custom properties in the `:root` selector.
+---
+
+## **3. Technology**
+
+PQXNet’s technology stack combines the latest advances in **post-quantum cryptography (PQC)**, **zero-trust networking**, and **high-performance hybrid transport**.
+
+We design systems that make quantum-safe security **transparent, scalable, and standards-compliant** — ready to integrate into any modern IT or cloud environment.
+
+### **Core Technology Pillars**
+
+* 🔐 **Post-Quantum Cryptography Integration**
+  Seamless deployment of NIST-standard PQC algorithms (e.g., ML-KEM, ML-DSA) into network transport and identity layers.
+
+* 🧩 **Hybrid Cryptographic Frameworks**
+  Dual-mode encryption combining classical and PQC algorithms to ensure interoperability and phased migration.
+
+* 🧠 **Intelligent Secure Routing**
+  Dynamic path selection and policy enforcement based on trust, risk, and performance metrics.
+
+* 🧱 **Zero-Trust Network Fabric**
+  Every user, device, and application must verify its identity — enforcing micro-segmented, identity-driven access.
+
+* ☁️ **Edge-to-Cloud Resilience**
+  Optimized for distributed architectures — from private data centers to multi-cloud and edge computing environments.
+
+---
+
+## **4. Solutions**
+
+PQXNet delivers a suite of **enterprise-grade solutions** for building and operating quantum-safe network infrastructure.
+
+### **Enterprise Quantum-Safe Mesh Network**
+
+Deploy hybrid PQC-enabled mesh network to secure critical corporate communications across data centers, cloud, and remote sites.
+
+### **Quantum-Resilient Gateway**
+
+A programmable edge gateway providing TLS termination, traffic encryption, and policy enforcement using PQC-based cryptographic providers.
+
+### **Secure Cloud Interconnect**
+
+Protect workloads and APIs across hybrid or multi-cloud environments with quantum-safe encryption and continuous trust validation.
+
+### **Financial Infrastructure Hardening**
+
+Enable banks, exchanges, and payment systems to comply with the **Post-Quantum Financial Infrastructure Framework (PQFIF)** and emerging regulatory standards.
+
+### **Network Modernization Services**
+
+Comprehensive consulting, migration, and lifecycle support for organizations transitioning toward quantum-resilient architectures.
+
+---
+
+## **5. Ecosystem & Standards Alignment**
+
+PQXNet actively collaborates with global partners, research communities, and standardization bodies to ensure **interoperable, policy-aligned, and forward-compatible** security solutions.
+
+### **Industry Alignment**
+
+* **PQFIF (Post-Quantum Financial Infrastructure Framework)** — driving financial ecosystem modernization for quantum resilience.
+* **NIST PQC Standards** — full alignment with U.S. Department of Commerce cryptographic standards.
+* **ISO/IEC 23837 & ETSI Quantum-Safe Initiatives** — interoperability across global security ecosystems.
+* **Zero Trust Architecture (ZTA)** — aligned with NIST SP 800-207 and modern zero-trust implementations.
+
+Through participation and partnership, PQXNet helps shape the **quantum-safe Internet standards** that will underpin secure global communications in the coming decades.
+
+---
+
+## **6. Why PQXNet**
+
+* **Security Without Compromise** — Quantum-resilient by design, without sacrificing speed or interoperability.
+* **Future-Ready Architecture** — Built for hybrid, multi-cloud, and distributed networks.
+* **Regulatory Confidence** — Designed to meet PQFIF, NIST, and ISO quantum-safety guidelines.
+* **Proven Expertise** — Founded by engineers and cryptographers with decades of experience in secure networking and systems design.
+
+---
+
+## **7. Join the Quantum-Safe Revolution**
+
+Quantum computing is redefining cybersecurity — and the time to prepare is now.
+PQXNet provides the tools, architecture, and expertise to **build a network that’s ready for the quantum era**.
+
+🔗 **Contact us** to explore partnerships, pilot programs, and enterprise-grade quantum-resilient solutions.
+
