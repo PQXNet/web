@@ -5,15 +5,56 @@ document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-link');
     const sections = document.querySelectorAll('section[id]');
     
+    // Detect current theme based on stylesheet
+    function getCurrentTheme() {
+        const stylesheets = Array.from(document.styleSheets);
+        for (let stylesheet of stylesheets) {
+            try {
+                const href = stylesheet.href || '';
+                if (href.includes('styles-blue.css')) {
+                    return 'dark'; // Blue theme uses dark background
+                } else if (href.includes('styles-blue-light.css')) {
+                    return 'light'; // Blue light theme uses light background
+                } else if (href.includes('styles-light.css')) {
+                    return 'light'; // Light theme uses light background
+                } else if (href.includes('styles.css')) {
+                    return 'light'; // Current styles.css is blue light theme
+                }
+            } catch (e) {
+                // Skip stylesheets that can't be accessed due to CORS
+                continue;
+            }
+        }
+        return 'light'; // Default to light theme
+    }
+
+    const currentTheme = getCurrentTheme();
+    
     // Handle scroll effects
     window.addEventListener('scroll', function() {
         const scrollY = window.scrollY;
         
-        // Add background to navbar when scrolled
-        if (scrollY > 50) {
-            navbar.style.background = 'rgba(10, 10, 10, 0.95)';
+        // Ensure hero maintains white background on scroll
+        const hero = document.querySelector('.hero');
+        if (hero && currentTheme === 'light') {
+            hero.style.backgroundColor = '#FFFFFF';
+        }
+        
+        // Add background to navbar when scrolled (theme-aware)
+        if (currentTheme === 'light') {
+            // Light theme - use white background
+            if (scrollY > 50) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
         } else {
-            navbar.style.background = 'rgba(10, 10, 10, 0.8)';
+            // Dark theme (original or blue) - use dark background
+            if (scrollY > 50) {
+                navbar.style.background = 'rgba(10, 10, 10, 0.95)';
+            } else {
+                navbar.style.background = 'rgba(10, 10, 10, 0.8)';
+            }
         }
         
         // Update active navigation link
@@ -46,17 +87,22 @@ document.addEventListener('DOMContentLoaded', function() {
     // Smooth scroll for navigation links
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
             const targetId = this.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
             
-            if (targetSection) {
-                const offsetTop = targetSection.offsetTop - 72; // Account for fixed navbar
-                window.scrollTo({
-                    top: offsetTop,
-                    behavior: 'smooth'
-                });
+            // Only prevent default and handle smooth scrolling for internal anchor links
+            if (targetId.startsWith('#')) {
+                e.preventDefault();
+                const targetSection = document.querySelector(targetId);
+                
+                if (targetSection) {
+                    const offsetTop = targetSection.offsetTop - 72; // Account for fixed navbar
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
             }
+            // For external links (like qfort-gateway.html), let the browser handle navigation normally
         });
     });
     
@@ -133,6 +179,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const hero = document.querySelector('.hero');
         const particleCount = 50;
         
+        // Set particle color based on theme
+        const particleColor = currentTheme === 'light' 
+            ? 'rgba(0, 102, 255, 0.3)'  // Blue for light themes
+            : 'rgba(0, 229, 153, 0.3)'; // Green for dark themes
+        
         for (let i = 0; i < particleCount; i++) {
             const particle = document.createElement('div');
             particle.className = 'particle';
@@ -140,7 +191,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 position: absolute;
                 width: 2px;
                 height: 2px;
-                background: rgba(0, 229, 153, 0.3);
+                background: ${particleColor};
                 border-radius: 50%;
                 pointer-events: none;
                 animation: float ${Math.random() * 10 + 5}s linear infinite;
@@ -284,10 +335,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     top: 100%;
                     left: 0;
                     right: 0;
-                    background: rgba(10, 10, 10, 0.95);
+                    background: rgba(255, 255, 255, 0.98);
                     flex-direction: column;
                     padding: 20px;
-                    border-top: 1px solid #1E1E1E;
+                    border-top: 1px solid #E5E7EB;
                 }
                 .nav-links.active {
                     display: flex;

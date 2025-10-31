@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QFort Gateway - Quantum-Safe Security Gateway | PQXNet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <svg class="logo-icon" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Outer quantum ring -->
+                        <circle cx="60" cy="60" r="45" fill="none" stroke="#0066FF" stroke-width="2" opacity="0.6"/>
+                        <circle cx="60" cy="60" r="35" fill="none" stroke="#66B3FF" stroke-width="1.5" opacity="0.8"/>
+                        
+                        <!-- Central node -->
+                        <circle cx="60" cy="60" r="8" fill="#0066FF"/>
+                        <circle cx="60" cy="60" r="12" fill="none" stroke="#0066FF" stroke-width="2" opacity="0.4"/>
+                        
+                        <!-- Connection points -->
+                        <circle cx="60" cy="15" r="4" fill="#66B3FF"/>
+                        <circle cx="105" cy="60" r="4" fill="#66B3FF"/>
+                        <circle cx="60" cy="105" r="4" fill="#66B3FF"/>
+                        <circle cx="15" cy="60" r="4" fill="#66B3FF"/>
+                        
+                        <!-- Quantum waves -->
+                        <path d="M 45 45 Q 60 35 75 45" stroke="#0066FF" stroke-width="1" fill="none" opacity="0.5"/>
+                        <path d="M 45 75 Q 60 85 75 75" stroke="#0066FF" stroke-width="1" fill="none" opacity="0.5"/>
+                    </svg>
+                    <span class="logo-text">PQXNet</span>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="#overview" class="nav-link">Overview</a>
+                    <a href="#architecture" class="nav-link">Architecture</a>
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#deployment" class="nav-link">Deployment</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <button class="cta-button">Get Started</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="grid-pattern"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">QFort Gateway</h1>
+            <p class="hero-subtitle">
+                Building Quantum-Resilient Security Infrastructure for the Post-Quantum Era
+            </p>
+
+        </div>
+    </section>
+
+
+
+    <!-- Market Background Section -->
+    <section id="overview" class="section mission-vision">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why</h2>
+            </div>
+            <div class="mv-grid">
+                <div class="mv-card">
+                    <h3 class="mv-title">The Quantum Threat</h3>
+                    <p class="mv-description">
+                        Quantum computing breakthroughs pose significant risks to current public-key cryptography. Shor's algorithm can factor large integers and compute discrete logarithms efficiently on a quantum computer, rendering RSA and ECC insecure.
+                    </p>
+                </div>
+                <div class="mv-card">
+                    <h3 class="mv-title">Global Shift Toward PQC</h3>
+                    <p class="mv-description">
+                        Standardization efforts led by NIST, ETSI, and ISO are defining new post-quantum cryptographic algorithms (e.g., ML-KEM, ML-DSA, FALCON). Governments and enterprises are already preparing migration paths toward quantum-safe infrastructures.
+                    </p>
+                </div>
+                <div class="mv-card">
+                    <h3 class="mv-title">The Deployment Challenge</h3>
+                    <p class="mv-description">
+                        While PQC algorithms are becoming available, integrating them into existing infrastructure requires substantial effort: updating TLS libraries, recompiling applications, and maintaining backward compatibility.
+                    </p>
+                </div>
+                <div class="mv-card">
+                    <h3 class="mv-title">Our Solution</h3>
+                    <p class="mv-description">
+                        <strong>QFort Gateway</strong> addresses these challenges by providing a <strong>drop-in, gateway-based solution</strong> that upgrades cryptographic strength at the network edge—<strong>without modifying existing applications</strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Key Capabilities Section -->
+    <section class="section solutions">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Key Capabilities</h2>
+                <p class="section-subtitle">
+                    Core features that make QFort Gateway enterprise-ready
+                </p>
+            </div>
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <h3 class="solution-title">PQC SSL/TLS Offload</h3>
+                    <p class="solution-description">
+                        Offloads cryptographic operations from backend services using post-quantum algorithms (e.g., ML-KEM for key exchange, ML-DSA for digital signatures).
+                    </p>
+                </div>
+                <div class="solution-card">
+                    <h3 class="solution-title">Quantum-Safe Certificate Management</h3>
+                    <p class="solution-description">
+                        Manages hybrid (classical + PQC) certificates for seamless transition and interoperability.
+                    </p>
+                </div>
+                <div class="solution-card">
+                    <h3 class="solution-title">Zero Trust Integration</h3>
+                    <p class="solution-description">
+                        Implements mTLS (mutual TLS), certificate-based identity, and least-privilege access control between services, agents, and devices.
+                    </p>
+                </div>
+                <div class="solution-card">
+                    <h3 class="solution-title">High Performance Gateway Core</h3>
+                    <p class="solution-description">
+                        Built on a low-latency, asynchronous network engine optimized for SSL offload and traffic routing.
+                    </p>
+                </div>
+                <div class="solution-card">
+                    <h3 class="solution-title">Plug-and-Play Deployment</h3>
+                    <p class="solution-description">
+                        Deployable from AWS Marketplace in minutes, with preconfigured security policies and monitoring.
+                    </p>
+                </div>
+                <div class="solution-card">
+                    <h3 class="solution-title">Enterprise-Grade Security</h3>
+                    <p class="solution-description">
+                        Integrates zero-trust principles and robust certificate management for maximum security.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section id="architecture" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Architecture & Design</h2>
+                <p class="section-subtitle">
+                    Modular, high-performance network proxy core with PQC integration
+                </p>
+            </div>
+            <div class="tech-content">
+                <div class="tech-intro">
+                    <p>QFort Gateway uses a modular, high-performance network proxy core with PQC-extended OpenSSL 3.x provider integration.</p>
+                </div>
+                <div class="tech-description">
+                    <p>It supports:</p>
+                    <ul style="margin: 20px 0; padding-left: 20px; color: #374151;">
+                        <li>Classical and PQC hybrid TLS 1.3 handshakes</li>
+                        <li>Configurable cipher suites and providers</li>
+                        <li>Hardware-assisted crypto acceleration (where available)</li>
+                        <li>Centralized policy and certificate management</li>
+                    </ul>
+                </div>
+                <div style="background-color: #F8F9FA; padding: 40px; border-radius: 8px; margin: 40px 0; text-align: center; border: 1px solid #E5E7EB;">
+                    <div style="font-family: monospace; font-size: 18px; color: #0066FF; margin-bottom: 20px;">
+                        [ Client ] ←→ [ QFort Gateway (PQC TLS Offload) ] ←→ [ Backend Service ]
+                    </div>
+                    <p style="color: #6B7280; margin: 0;">Transparent SSL/TLS termination and relay point</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Table Section -->
+    <section id="features" class="section solutions">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Core Features</h2>
+                <p class="section-subtitle">
+                    Comprehensive feature set for enterprise quantum-safe security
+                </p>
+            </div>
+            <div class="tech-content">
+                <div style="overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; background-color: #FFFFFF; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);">
+                        <thead>
+                            <tr style="background-color: #F8F9FA;">
+                                <th style="padding: 20px; text-align: left; border-bottom: 1px solid #E5E7EB; color: #0066FF; font-weight: 600;">Feature</th>
+                                <th style="padding: 20px; text-align: left; border-bottom: 1px solid #E5E7EB; color: #0066FF; font-weight: 600;">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 20px; border-bottom: 1px solid #E5E7EB; font-weight: 500; color: #374151;">PQC SSL/TLS Offload</td>
+                                <td style="padding: 20px; border-bottom: 1px solid #E5E7EB; color: #6B7280;">Implements ML-KEM, ML-DSA, and other NIST PQC algorithms for TLS termination</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 20px; border-bottom: 1px solid #E5E7EB; font-weight: 500; color: #374151;">Hybrid Certificate Support</td>
+                                <td style="padding: 20px; border-bottom: 1px solid #E5E7EB; color: #6B7280;">Supports hybrid X.509 certificates combining classical and PQC keys</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 20px; border-bottom: 1px solid #E5E7EB; font-weight: 500; color: #374151;">Zero Trust Authentication</td>
+                                <td style="padding: 20px; border-bottom: 1px solid #E5E7EB; color: #6B7280;">Enforces certificate-based mutual TLS and per-service access control</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 20px; border-bottom: 1px solid #E5E7EB; font-weight: 500; color: #374151;">Traffic Encryption and Routing</td>
+                                <td style="padding: 20px; border-bottom: 1px solid #E5E7EB; color: #6B7280;">Securely relays and routes encrypted traffic between clients and backends</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 20px; border-bottom: 1px solid #E5E7EB; font-weight: 500; color: #374151;">Observability and Metrics</td>
+                                <td style="padding: 20px; border-bottom: 1px solid #E5E7EB; color: #6B7280;">Built-in dashboards and logs via CloudWatch integration</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 20px; border-bottom: 1px solid #E5E7EB; font-weight: 500; color: #374151;">Policy Configuration API</td>
+                                <td style="padding: 20px; border-bottom: 1px solid #E5E7EB; color: #6B7280;">REST and CLI interfaces for managing certificates, routes, and trust policies</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 20px; font-weight: 500; color: #374151;">High-Performance I/O Engine</td>
+                                <td style="padding: 20px; color: #6B7280;">Optimized network stack with minimal latency overhead</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competitive Advantages Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Competitive Advantages</h2>
+                <p class="section-subtitle">
+                    Why QFort Gateway stands out in the quantum-safe security market
+                </p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon">🛡️</div>
+                    <h3 class="why-title">Quantum-Ready by Design</h3>
+                    <p class="why-description">
+                        Built with PQC at the core, not as an add-on
+                    </p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">⚡</div>
+                    <h3 class="why-title">Zero Code Changes</h3>
+                    <p class="why-description">
+                        Works transparently as a drop-in gateway—no need to modify applications
+                    </p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">🚀</div>
+                    <h3 class="why-title">High Performance</h3>
+                    <p class="why-description">
+                        Optimized for large-scale SSL/TLS offload; supports hybrid crypto at wire speed
+                    </p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">🔧</div>
+                    <h3 class="why-title">Ease of Deployment</h3>
+                    <p class="why-description">
+                        Available as a ready-to-launch AWS AMI; no manual setup required
+                    </p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">🔗</div>
+                    <h3 class="why-title">Interoperability</h3>
+                    <p class="why-description">
+                        Supports both classical and PQC connections for gradual migration
+                    </p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">🏢</div>
+                    <h3 class="why-title">Enterprise-Grade Security</h3>
+                    <p class="why-description">
+                        Integrates zero-trust principles and robust certificate management
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="section solutions">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Use Cases</h2>
+                <p class="section-subtitle">
+                    Real-world applications across industries and environments
+                </p>
+            </div>
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <h3 class="solution-title">Cloud and Data Center Security</h3>
+                    <p class="solution-description">
+                        Protect inter-service communication with PQC TLS.
+                    </p>
+                </div>
+                <div class="solution-card">
+                    <h3 class="solution-title">Edge and IoT Deployments</h3>
+                    <p class="solution-description">
+                        Enable lightweight, secure connections from distributed devices.
+                    </p>
+                </div>
+                <div class="solution-card">
+                    <h3 class="solution-title">Hybrid Cloud Environments</h3>
+                    <p class="solution-description">
+                        Bridge classical and PQC networks securely.
+                    </p>
+                </div>
+                <div class="solution-card">
+                    <h3 class="solution-title">Regulated Industries</h3>
+                    <p class="solution-description">
+                        Meet early compliance for quantum-safe standards (e.g., government, finance, telecom).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AWS Marketplace Section -->
+    <section id="deployment" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">AWS Marketplace Offering</h2>
+                <p class="section-subtitle">
+                    Enterprise-ready deployment and support options
+                </p>
+            </div>
+            <div class="tech-content">
+                <div style="overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; background-color: #FFFFFF; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);">
+                        <thead>
+                            <tr style="background-color: #F8F9FA;">
+                                <th style="padding: 20px; text-align: left; border-bottom: 1px solid #E5E7EB; color: #0066FF; font-weight: 600;">Attribute</th>
+                                <th style="padding: 20px; text-align: left; border-bottom: 1px solid #E5E7EB; color: #0066FF; font-weight: 600;">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 20px; border-bottom: 1px solid #E5E7EB; font-weight: 500; color: #374151;">Product Name</td>
+                                <td style="padding: 20px; border-bottom: 1px solid #E5E7EB; color: #6B7280;">QFort Gateway</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 20px; border-bottom: 1px solid #E5E7EB; font-weight: 500; color: #374151;">Type</td>
+                                <td style="padding: 20px; border-bottom: 1px solid #E5E7EB; color: #6B7280;">Amazon Machine Image (AMI)</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 20px; border-bottom: 1px solid #E5E7EB; font-weight: 500; color: #374151;">Deployment Time</td>
+                                <td style="padding: 20px; border-bottom: 1px solid #E5E7EB; color: #6B7280;">&lt; 5 minutes</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 20px; border-bottom: 1px solid #E5E7EB; font-weight: 500; color: #374151;">Supported Regions</td>
+                                <td style="padding: 20px; border-bottom: 1px solid #E5E7EB; color: #6B7280;">Global (initial release: us-east-1)</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 20px; border-bottom: 1px solid #E5E7EB; font-weight: 500; color: #374151;">License Model</td>
+                                <td style="padding: 20px; border-bottom: 1px solid #E5E7EB; color: #6B7280;">BYOL or Subscription</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 20px; border-bottom: 1px solid #E5E7EB; font-weight: 500; color: #374151;">Support</td>
+                                <td style="padding: 20px; border-bottom: 1px solid #E5E7EB; color: #6B7280;">Email & ticket-based support (business hours)</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 20px; font-weight: 500; color: #374151;">Pricing</td>
+                                <td style="padding: 20px; color: #6B7280;">Flexible hourly / annual plans</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="contact-title">Ready to Get Started?</h2>
+                <p class="contact-description">
+                    Contact our quantum security experts to learn how QFort Gateway can protect your organization in the post-quantum era.
+                </p>
+                <p class="contact-cta">
+                    QFort Security Team | support@pqxnet.com
+                </p>
+                <button class="contact-button">Contact Us</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <svg class="logo-icon" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Outer quantum ring -->
+                        <circle cx="60" cy="60" r="45" fill="none" stroke="#0066FF" stroke-width="2" opacity="0.6"/>
+                        <circle cx="60" cy="60" r="35" fill="none" stroke="#66B3FF" stroke-width="1.5" opacity="0.8"/>
+                        
+                        <!-- Central node -->
+                        <circle cx="60" cy="60" r="8" fill="#0066FF"/>
+                        <circle cx="60" cy="60" r="12" fill="none" stroke="#0066FF" stroke-width="2" opacity="0.4"/>
+                        
+                        <!-- Connection points -->
+                        <circle cx="60" cy="15" r="4" fill="#66B3FF"/>
+                        <circle cx="105" cy="60" r="4" fill="#66B3FF"/>
+                        <circle cx="60" cy="105" r="4" fill="#66B3FF"/>
+                        <circle cx="15" cy="60" r="4" fill="#66B3FF"/>
+                        
+                        <!-- Quantum waves -->
+                        <path d="M 45 45 Q 60 35 75 45" stroke="#0066FF" stroke-width="1" fill="none" opacity="0.5"/>
+                        <path d="M 45 75 Q 60 85 75 75" stroke="#0066FF" stroke-width="1" fill="none" opacity="0.5"/>
+                    </svg>
+                    <span class="footer-logo logo-text">PQXNet</span>
+                </div>
+                <p class="footer-text">© 2025 PQXNet. Building the quantum-resilient internet.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
